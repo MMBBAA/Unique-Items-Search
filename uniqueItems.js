@@ -1,13 +1,11 @@
 	window.onload=function(){
 		document.getElementById("clear").addEventListener("click", clear);
-		document.getElementById("user").addEventListener("keyup", test);	
-			
+		document.getElementById("user").addEventListener("keyup", test);			
 	}
 
 	function test(){
-			
 		var word=document.getElementById("user").value;
-				duplicateEncode(word);
+		duplicateEncode(word);
 	}
 
 	function clear(){
@@ -31,6 +29,5 @@
  		}
  	
  		rdo=repeated=[...new Set(empty)].toString().replace(/,/g," ");
-
  		document.getElementById("rdo").innerHTML=`Items repeated: ${rdo}`;
 	}
